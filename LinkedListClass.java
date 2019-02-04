@@ -7,7 +7,10 @@ import java.util.List;
 public class LinkedListClass {
 	public static void main(String[] args) {
 		/*
-		 * ArrayLists manage arrays internally. [0][1][2][3][4][5] ....
+		 * ArrayLists manage arrays internally. [0][1][2][3][4][5] .... normally
+		 * un-indexed arrays at declaration gets a default size 10 if the size
+		 * exceeds it doubles up and then reassigns all elements to the newly
+		 * created array
 		 */
 		List<Integer> arrayList = new ArrayList<Integer>();
 
@@ -34,8 +37,9 @@ public class LinkedListClass {
 		 */
 
 		// Add items elsewhere in list
+		// in the below case, adding items to the begging of the list
 		for (int i = 0; i < 1E5; i++) {
-			list.add(i);
+			list.add(0, i);
 		}
 		long end = System.currentTimeMillis();
 
