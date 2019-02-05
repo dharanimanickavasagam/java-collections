@@ -23,6 +23,7 @@ public class ArrayListClass {
 		// Integer array
 		ArrayList<Integer> array1 = new ArrayList<Integer>();
 		System.out.println("Enter numeric values ");
+
 		while (true) {
 			int input = new Scanner(System.in).nextInt();
 			if (input == 0) {
